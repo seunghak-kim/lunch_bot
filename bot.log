@@ -12,3 +12,130 @@
 2025-05-26 11:42:17,589 INFO:Get LATEST chromedriver version for google-chrome
 2025-05-26 11:42:17,623 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
 2025-05-26 11:42:47,177 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['kakao_images/대륭18차_2025_05_26.jpg', 'kakao_images/대륭17차_2025_05_26.jpg', 'kakao_images/에이스하이엔드10차_2025_05_26.jpg']
+2025-05-26 12:03:00,626 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-26 12:03:00,645 INFO:logging in using static token
+2025-05-26 12:03:02,260 INFO:Shard ID None has connected to Gateway (Session ID: aa53344f4c866cb350b9caf1326db54b).
+2025-05-26 12:03:04,271 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-26 12:03:04,271 INFO:Bot is ready to receive commands.
+2025-05-26 12:03:04,280 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-26 12:03:04,280 INFO:Scheduled job for scheduled_crawl at 09:55 mon-fri.
+2025-05-26 12:03:04,281 INFO:Added job "scheduled_crawl" to job store "default"
+2025-05-26 12:03:04,282 INFO:Scheduler started
+2025-05-26 12:03:04,283 INFO:====== WebDriver manager ======
+2025-05-26 12:03:05,059 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 12:03:05,133 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 12:03:05,173 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-26 12:03:32,886 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['kakao_images/대륭18차_2025_05_26.jpg', 'kakao_images/대륭17차_2025_05_26.jpg', 'kakao_images/에이스하이엔드10차_2025_05_26.jpg']
+2025-05-26 12:04:34,228 INFO:!음식추천 명령 실행 by demijin (ID: 370455630210924544), category: 돈가스
+2025-05-26 12:04:35,963 ERROR:An error occurred during command execution: Command raised an exception: AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+NoneType: None
+2025-05-26 12:05:02,300 INFO:!음식추천 명령 실행 by kimdoyoon0582_77773 (ID: 1134820625257599046), category: 햄버거
+2025-05-26 12:06:07,622 INFO:!음식추천 명령 실행 by kimdoyoon0582_77773 (ID: 1134820625257599046), category: None
+2025-05-26 12:06:09,130 ERROR:An error occurred during command execution: Command raised an exception: AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+NoneType: None
+2025-05-26 12:07:23,203 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-26 12:07:23,221 INFO:logging in using static token
+2025-05-26 12:07:25,794 INFO:Shard ID None has connected to Gateway (Session ID: 2043dbcab4885e9214491e7c22096a94).
+2025-05-26 12:07:27,808 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-26 12:07:27,808 INFO:Bot is ready to receive commands.
+2025-05-26 12:07:27,817 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-26 12:07:27,817 INFO:Scheduled job for scheduled_crawl at 09:55 mon-fri.
+2025-05-26 12:07:27,819 INFO:Added job "scheduled_crawl" to job store "default"
+2025-05-26 12:07:27,819 INFO:Scheduler started
+2025-05-26 12:07:27,820 INFO:====== WebDriver manager ======
+2025-05-26 12:07:28,454 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 12:07:28,504 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 12:07:28,533 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-26 12:07:57,036 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['kakao_images/대륭18차_2025_05_26.jpg', 'kakao_images/대륭17차_2025_05_26.jpg', 'kakao_images/에이스하이엔드10차_2025_05_26.jpg']
+2025-05-26 12:08:18,983 INFO:!음식추천 명령 실행 by demijin (ID: 370455630210924544), category: 돈가스
+2025-05-26 12:08:20,617 INFO:추천 로그 기록: {'user_id': 370455630210924544, 'username': 'demijin', 'store_name': '카츠누리', 'category': '일식,돈가스', 'timestamp': '2025-05-26T12:08:20.615406'}
+2025-05-26 12:08:22,153 INFO:카츠누리 추천이 1 증가 (by demijin)
+2025-05-26 12:09:35,581 INFO:!음식추천 명령 실행 by kimdoyoon0582_77773 (ID: 1134820625257599046), category: 찌게
+2025-05-26 12:09:51,676 INFO:!음식추천 명령 실행 by kimdoyoon0582_77773 (ID: 1134820625257599046), category: 빼갈
+2025-05-26 12:11:28,695 INFO:!음식추천 명령 실행 by demijin (ID: 370455630210924544), category: 찌개
+2025-05-26 12:11:30,608 INFO:추천 로그 기록: {'user_id': 370455630210924544, 'username': 'demijin', 'store_name': '김치도가 독산역점', 'category': '찌개,전골', 'timestamp': '2025-05-26T12:11:30.606479'}
+2025-05-26 12:11:38,606 INFO:김치도가 독산역점 추천이 1 증가 (by demijin)
+2025-05-26 12:11:42,378 INFO:!음식추천 명령 실행 by kimdoyoon0582_77773 (ID: 1134820625257599046), category: 찌개
+2025-05-26 12:11:43,959 INFO:추천 로그 기록: {'user_id': 1134820625257599046, 'username': 'kimdoyoon0582_77773', 'store_name': '한라산도새기 가산점', 'category': '찌개,육류', 'timestamp': '2025-05-26T12:11:43.957808'}
+2025-05-26 12:11:45,903 INFO:한라산도새기 가산점 추천이 1 증가 (by kimdoyoon0582_77773)
+2025-05-26 12:15:31,954 INFO:!음식추천 명령 실행 by bagjinyang_73574 (ID: 1340250866107682826), category: 치킨
+2025-05-26 13:06:55,750 INFO:Shard ID None session has been invalidated.
+2025-05-26 13:07:01,459 INFO:Shard ID None has connected to Gateway (Session ID: fe650d674711e0430737056192fd6e16).
+2025-05-26 13:07:03,465 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-26 13:07:03,465 INFO:Bot is ready to receive commands.
+2025-05-26 13:07:03,467 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-26 13:07:03,468 INFO:Scheduled job for scheduled_crawl at 09:55 mon-fri.
+2025-05-26 13:07:03,468 INFO:Added job "scheduled_crawl" to job store "default"
+2025-05-26 13:07:03,469 INFO:Scheduler started
+2025-05-26 13:07:03,471 INFO:====== WebDriver manager ======
+2025-05-26 13:07:04,910 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 13:07:04,954 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 13:07:04,988 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-26 13:07:34,103 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['kakao_images/대륭18차_2025_05_26.jpg', 'kakao_images/대륭17차_2025_05_26.jpg', 'kakao_images/에이스하이엔드10차_2025_05_26.jpg']
+2025-05-26 13:24:02,995 INFO:Shard ID None session has been invalidated.
+2025-05-26 13:24:08,756 INFO:Shard ID None has connected to Gateway (Session ID: 69fb2b336fbcc8a982955ac4cfd2dcc6).
+2025-05-26 13:24:10,768 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-26 13:24:10,777 INFO:Bot is ready to receive commands.
+2025-05-26 13:24:10,784 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-26 13:24:10,785 INFO:Scheduled job for scheduled_crawl at 09:55 mon-fri.
+2025-05-26 13:24:10,786 INFO:Added job "scheduled_crawl" to job store "default"
+2025-05-26 13:24:10,792 INFO:Scheduler started
+2025-05-26 13:24:10,794 INFO:====== WebDriver manager ======
+2025-05-26 13:24:11,429 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 13:24:11,457 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 13:24:11,485 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-26 13:41:21,817 INFO:Shard ID None session has been invalidated.
+2025-05-26 13:41:27,544 INFO:Shard ID None has connected to Gateway (Session ID: 223ecb26e3f0614a6d6e24a0e39b6d28).
+2025-05-26 13:41:29,548 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-26 13:41:29,549 INFO:Bot is ready to receive commands.
+2025-05-26 13:41:29,550 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-26 13:41:29,550 INFO:Scheduled job for scheduled_crawl at 09:55 mon-fri.
+2025-05-26 13:41:29,550 INFO:Added job "scheduled_crawl" to job store "default"
+2025-05-26 13:41:29,550 INFO:Scheduler started
+2025-05-26 13:41:29,550 INFO:====== WebDriver manager ======
+2025-05-26 13:41:30,160 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 13:41:30,191 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 13:41:30,219 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-26 13:41:36,734 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['kakao_images/대륭18차_2025_05_26.jpg', 'kakao_images/대륭17차_2025_05_26.jpg', 'kakao_images/에이스하이엔드10차_2025_05_26.jpg']
+2025-05-26 13:54:56,249 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['kakao_images/대륭18차_2025_05_26.jpg', 'kakao_images/대륭17차_2025_05_26.jpg', 'kakao_images/에이스하이엔드10차_2025_05_26.jpg']
+2025-05-26 13:55:01,883 INFO:Shard ID None session has been invalidated.
+2025-05-26 13:55:07,669 INFO:Shard ID None has connected to Gateway (Session ID: abc3b4ed02bde7b84338cab89ddd12f5).
+2025-05-26 13:55:09,687 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-26 13:55:09,688 INFO:Bot is ready to receive commands.
+2025-05-26 13:55:09,690 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-26 13:55:09,691 INFO:Scheduled job for scheduled_crawl at 09:55 mon-fri.
+2025-05-26 13:55:09,692 INFO:Added job "scheduled_crawl" to job store "default"
+2025-05-26 13:55:09,692 INFO:Scheduler started
+2025-05-26 13:55:09,693 INFO:====== WebDriver manager ======
+2025-05-26 13:55:10,318 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 13:55:10,353 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 13:55:10,381 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-26 13:55:37,452 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['kakao_images/대륭18차_2025_05_26.jpg', 'kakao_images/대륭17차_2025_05_26.jpg', 'kakao_images/에이스하이엔드10차_2025_05_26.jpg']
+2025-05-26 14:01:49,620 INFO:Shard ID None session has been invalidated.
+2025-05-26 14:01:55,337 INFO:Shard ID None has connected to Gateway (Session ID: e374f12c0031094063a7a58dffe8080c).
+2025-05-26 14:01:57,351 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-26 14:01:57,352 INFO:Bot is ready to receive commands.
+2025-05-26 14:01:57,353 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-26 14:01:57,353 INFO:Scheduled job for scheduled_crawl at 09:55 mon-fri.
+2025-05-26 14:01:57,354 INFO:Added job "scheduled_crawl" to job store "default"
+2025-05-26 14:01:57,354 INFO:Scheduler started
+2025-05-26 14:01:57,355 INFO:====== WebDriver manager ======
+2025-05-26 14:01:58,548 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 14:01:58,591 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 14:01:58,623 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-26 14:02:25,650 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['kakao_images/대륭18차_2025_05_26.jpg', 'kakao_images/대륭17차_2025_05_26.jpg', 'kakao_images/에이스하이엔드10차_2025_05_26.jpg']
+2025-05-26 14:21:11,674 INFO:Shard ID None has successfully RESUMED session e374f12c0031094063a7a58dffe8080c.
+2025-05-26 14:36:43,815 INFO:Shard ID None has successfully RESUMED session e374f12c0031094063a7a58dffe8080c.
+2025-05-26 15:02:20,618 INFO:Shard ID None session has been invalidated.
+2025-05-26 15:02:26,380 INFO:Shard ID None has connected to Gateway (Session ID: fbc9c5b7f1a82b454fc96aa6a63dccc0).
+2025-05-26 15:02:28,396 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-26 15:02:28,396 INFO:Bot is ready to receive commands.
+2025-05-26 15:02:28,400 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-26 15:02:28,400 INFO:Scheduled job for scheduled_crawl at 09:55 mon-fri.
+2025-05-26 15:02:28,402 INFO:Added job "scheduled_crawl" to job store "default"
+2025-05-26 15:02:28,403 INFO:Scheduler started
+2025-05-26 15:02:28,405 INFO:====== WebDriver manager ======
+2025-05-26 15:02:29,905 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 15:02:30,028 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 15:02:30,075 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-26 15:02:58,727 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['kakao_images/대륭18차_2025_05_26.jpg', 'kakao_images/대륭17차_2025_05_26.jpg', 'kakao_images/에이스하이엔드10차_2025_05_26.jpg']

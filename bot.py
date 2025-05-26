@@ -13,6 +13,7 @@ import pytz
 import json
 import random
 from discord import Embed
+import asyncio
 
 # Set up logging (console + file)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s:%(message)s',
@@ -39,6 +40,8 @@ KST = pytz.timezone('Asia/Seoul')
 today_date = datetime.now(KST).strftime("%Y-%m-%d")
 today_date = int(today_date.replace("-", ""))
 random.seed(today_date)
+
+lock = asyncio.Lock()
 
 async def scheduled_crawl():
     global today_menu_lunch_images
@@ -143,35 +146,60 @@ async def recommend_food(ctx, *, category: str = None):
         "username": str(ctx.author),
         "store_name": restaurant['store_name'],
         "category": restaurant['category'],
-        "timestamp": datetime.datetime.now().isoformat()
+        "timestamp": datetime.now().isoformat()
     }
     with open('recommend_log.jsonl', 'a', encoding='utf-8') as logf:
         logf.write(json.dumps(log_entry, ensure_ascii=False) + '\n')
     logging.info(f"추천 로그 기록: {log_entry}")
 
-    def check(reaction, user):
-        return (
-            reaction.message.id == msg.id and
-            str(reaction.emoji) in ['👍', '👎'] and
-            user != ctx.bot.user
-        )
-    try:
-        reaction, user = await bot.wait_for('reaction_add', timeout=60.0, check=check)
-    except Exception:
+@bot.event
+async def on_reaction_add(reaction, user):
+    if user.bot:
         return
-    if str(reaction.emoji) == '👍':
-        # Increase recommand value
-        for r in data:
-            if r['store_name'] == restaurant['store_name']:
-                r['recommand'] = r.get('recommand', 0) + 1
-                break
-        with open('restaurants.json', 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        await ctx.send(f"{restaurant['store_name']} 추천이 1 증가했습니다!")
-        logging.info(f"{restaurant['store_name']} 추천이 1 증가 (by {ctx.author})")
-    elif str(reaction.emoji) == '👎':
-        await ctx.send(f"{restaurant['store_name']} 비추천이 눌렸습니다.")
-        logging.info(f"{restaurant['store_name']} 비추천 클릭 (by {ctx.author})")
+    msg = reaction.message
+    if msg.embeds and msg.embeds[0].footer.text.startswith("추천 수:"):
+        store_name = msg.embeds[0].title
+        if str(reaction.emoji) == '👍':
+            async with lock:
+                # 실제 메시지의 👍 개수로 카운트
+                count = 0
+                for react in msg.reactions:
+                    if str(react.emoji) == '👍':
+                        users = [u async for u in react.users()]
+                        count = len([u for u in users if not u.bot])
+                with open('restaurants.json', 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                for r in data:
+                    if r['store_name'] == store_name:
+                        r['recommand'] = count
+                        break
+                with open('restaurants.json', 'w', encoding='utf-8') as f:
+                    json.dump(data, f, ensure_ascii=False, indent=2)
+                logging.info(f"{store_name} 추천 카운트 동기화: {count} (by {user})")
+
+@bot.event
+async def on_reaction_remove(reaction, user):
+    if user.bot:
+        return
+    msg = reaction.message
+    if msg.embeds and msg.embeds[0].footer.text.startswith("추천 수:"):
+        store_name = msg.embeds[0].title
+        if str(reaction.emoji) == '👍':
+            async with lock:
+                count = 0
+                for react in msg.reactions:
+                    if str(react.emoji) == '👍':
+                        users = [u async for u in react.users()]
+                        count = len([u for u in users if not u.bot])
+                with open('restaurants.json', 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                for r in data:
+                    if r['store_name'] == store_name:
+                        r['recommand'] = count
+                        break
+                with open('restaurants.json', 'w', encoding='utf-8') as f:
+                    json.dump(data, f, ensure_ascii=False, indent=2)
+                logging.info(f"{store_name} 추천 카운트 동기화(해제): {count} (by {user})")
 
 # 리더보드 
 
