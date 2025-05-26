@@ -1,0 +1,14 @@
+2025-05-26 11:42:13,519 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-26 11:42:13,538 INFO:logging in using static token
+2025-05-26 11:42:14,834 INFO:Shard ID None has connected to Gateway (Session ID: abc6502b316b6f0c22dc2c263efd2e1d).
+2025-05-26 11:42:16,840 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-26 11:42:16,841 INFO:Bot is ready to receive commands.
+2025-05-26 11:42:16,849 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-26 11:42:16,853 INFO:Scheduled job for scheduled_crawl at 09:55 mon-fri.
+2025-05-26 11:42:16,855 INFO:Added job "scheduled_crawl" to job store "default"
+2025-05-26 11:42:16,855 INFO:Scheduler started
+2025-05-26 11:42:16,855 INFO:====== WebDriver manager ======
+2025-05-26 11:42:17,530 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 11:42:17,589 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-26 11:42:17,623 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-26 11:42:47,177 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['kakao_images/대륭18차_2025_05_26.jpg', 'kakao_images/대륭17차_2025_05_26.jpg', 'kakao_images/에이스하이엔드10차_2025_05_26.jpg']
