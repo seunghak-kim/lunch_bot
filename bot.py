@@ -6,13 +6,14 @@ import io
 import logging
 import os
 from dotenv import load_dotenv
-from kakao_image_crawler import crawl_kakao_images
+from kakao_image_crawler import crawl_kakao_images, crawl_kakao_images_dinner
 from collections import defaultdict
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import pytz
 import json
 import random
 from discord import Embed
+from openai import AsyncOpenAI
 import asyncio
 
 # Set up logging (console + file)
@@ -21,10 +22,20 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s:%(mess
 
 # Load environment variables
 load_dotenv()
+
+# openai api key 설정 
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+client = AsyncOpenAI(api_key=OPENAI_API_KEY)
+
 TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 if not TOKEN:
     logging.error('DISCORD_BOT_TOKEN not found in environment variables!')
     exit(1)
+
+
+# Load restaurant data
+with open('restaurants.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
 
 # Discord settings
 intents = discord.Intents.default()
@@ -34,20 +45,27 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 today_menu_lunch_images = None  # 전역 변수로 선언
-toady_menu_dinner_imgages = None 
+toady_menu_dinner_images = None 
 KST = pytz.timezone('Asia/Seoul')
-# 오늘 날짜  인트형으로 변경해서 seed 지정
-today_date = datetime.now(KST).strftime("%Y-%m-%d")
+
+
+today_date = datetime.now(KST).strftime("%Y-%m-%d") # 오늘 날짜  인트형으로 변경해서 seed 지정
 today_date = int(today_date.replace("-", ""))
 random.seed(today_date)
 
 lock = asyncio.Lock()
 
-async def scheduled_crawl():
+async def scheduled_lunch_crawl():
     global today_menu_lunch_images
     loop = bot.loop
     today_menu_lunch_images = await loop.run_in_executor(None, crawl_kakao_images)
     logging.info(f"[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: {today_menu_lunch_images}")
+
+async def scheduled_dinner_crawl():
+    global toady_menu_dinner_images
+    loop = bot.loop
+    toady_menu_dinner_images = await loop.run_in_executor(None, crawl_kakao_images_dinner)
+    logging.info(f"[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: {toady_menu_dinner_images}")
 
 @bot.event
 async def on_ready():
@@ -60,11 +78,11 @@ async def on_ready():
     print('------')
     # 스케줄러 설정
     scheduler = AsyncIOScheduler(timezone=KST)
-    scheduler.add_job(scheduled_crawl, 'cron', day_of_week='mon-fri', hour=9, minute=55)
-    logging.info('Scheduled job for scheduled_crawl at 09:55 mon-fri.')
+    scheduler.add_job(scheduled_lunch_crawl, 'cron', day_of_week='mon-fri', hour=9, minute=55)
+    logging.info('Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.')
+    scheduler.add_job(scheduled_dinner_crawl, 'cron', day_of_week='mon-fri', hour=16, minute=55)
+    logging.info('Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.')
     scheduler.start()
-    # 봇이 처음 켜질 때도 한 번 실행
-    await scheduled_crawl()
 
 @bot.command(name='점심')
 async def send_lunch_menu(ctx):
@@ -106,18 +124,98 @@ async def send_dinner_menu(ctx):
     if now.hour < 17:
         await ctx.send("⏰ 저녁 메뉴는 오후 5시부터 확인할 수 있습니다!")
         return
-    await ctx.send("🍱 석식메뉴는 대륭 17차만 지원합니다")
-    await ctx.send("개발중 입니다..")
-    if not today_menu_lunch_images:
+    
+    if not toady_menu_dinner_images:
         await ctx.send("❌ 메뉴 정보를 가져오지 못했습니다. 로그를 확인해주세요.")
         return
+    
+    # 1. Remove duplicates
+    unique_images = list(set(toady_menu_dinner_images))
 
-@bot.command(name='음식추천')
+    # 2. Group by restaurant name (before first underscore)
+    grouped = defaultdict(list)
+    for img_path in unique_images:
+        filename = os.path.basename(img_path)
+        restaurant = filename.split('_')[0]
+        grouped[restaurant].append(img_path)
+
+    # 3. Send restaurant name, then images
+    for restaurant, images in grouped.items():
+        await ctx.send(f"🍽️ {restaurant} 오늘의 저녁 메뉴입니다!")
+        for img_path in images:
+            with open(img_path, 'rb') as f:
+                await ctx.send(file=discord.File(f))
+                
+# AI 추천 음식     
+# GPT 음식 설명 생성
+async def generate_description(food_name: str):
+    prompt = f"{food_name}에 대해 맛있고 유쾌한 설명을 2~3문장으로 해줘 끝맺음으로. 그리고 먹고 싶게 만들어줘!"
+    response = await client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=150,
+        temperature=0.7
+    )
+    return response.choices[0].message.content.strip()
+
+# GPT에게 메뉴명을 입력 받아 해당 음식점 추론 안됨 
+# async def gpt_find_store_by_menu(menu_name: str):
+#     menu_list = "\n".join([f"- {r['store_name']} ({r['category']})" for r in data])
+#     prompt = (
+#         f"나는 '{menu_name}'이(가) 먹고 싶은데, 아래 음식점 중 어디가 좋을까?\n"
+#         f"{menu_list}\n"
+#         f"해당 메뉴를 팔 것 같은 곳을 1곳만 추천해줘. 이름만 정확히 줘."
+#     )
+#     response = await client.chat.completions.create(
+#         model="gpt-4o-mini",
+#         messages=[
+#             {"role": "system", "content": "You are a helpful assistant."},
+#             {"role": "user", "content": prompt}
+#         ],
+#         max_tokens=50,
+#         temperature=0.3
+#     )
+#     return response.choices[0].message.content.strip()
+
+# AI 추천 음식 선택 (비동기)
+async def get_ai_recommend_food(category=None):
+    filtered = [r for r in data if r['category'] == category] if category else data
+    if not filtered:
+        return None, None
+    today_restaurant = random.choice(filtered)
+    description = await generate_description(today_restaurant['store_name'])
+    return today_restaurant, description
+
+# 디스코드 명령어
+@bot.command('AI추천')
+async def ai_recommend_food(ctx, *, category: str = None):
+    loading_message = await ctx.send("🤖 AI가 오늘의 메뉴를 고민 중입니다...")
+
+    today_restaurant, today_description = await get_ai_recommend_food(category)
+
+    if today_restaurant is None:
+        await loading_message.edit(content="AI가 추천할 음식점을 찾지 못했어요 😢")
+        return
+
+    embed = Embed(
+        title=f'🍱 AI 추천 메뉴: {today_restaurant["store_name"]}',
+        description=today_description
+    )
+    embed.add_field(name='카테고리', value=today_restaurant['category'], inline=True)
+    embed.add_field(name='평점', value=str(today_restaurant['rating']), inline=True)
+    embed.add_field(name='전화번호', value=today_restaurant.get('tell_num', today_restaurant.get('phone_num', '없음')), inline=False)
+    embed.add_field(name='영업시간', value=today_restaurant['business_hours'], inline=False)
+
+    await loading_message.edit(content=None, embed=embed)
+
+    logging.info(f"!AI음식추천 명령 실행 by {ctx.author} (ID: {ctx.author.id}), category: {category}")    
+
+@bot.command(name='음식추천') # 카테고리 수정 
 async def recommend_food(ctx, *, category: str = None):
     logging.info(f"!음식추천 명령 실행 by {ctx.author} (ID: {ctx.author.id}), category: {category}")
-    # Load restaurant data
-    with open('restaurants.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
     # Filter by category if provided
     if category:
         keywords = category.split()

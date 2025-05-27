@@ -10,6 +10,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import shutil
+import pytz 
 
 def get_today_str_with_weekday():
     today = datetime.now()
@@ -153,8 +154,88 @@ def crawl_kakao_images():
     return saved_files
 
 def crawl_kakao_images_dinner():
-    pass
+    # 기존 점심 로직과 유사하나 저녁_jpg이라는 파일로 만들어야함 
+    IMAGES_DIR = Path("./kakao_images")
+    IMAGES_DIR.mkdir(exist_ok=True)
+    KST = pytz.timezone('Asia/Seoul')
+    kakao_urls = {
+        "대륭17차": "https://pf.kakao.com/_xfWxfCxj/posts",
+        "에이스하이엔드10차": "https://pf.kakao.com/_rXxkCn/posts"
+    }
+    error_img_map = {
+        "대륭18차": './kakao_error_img/대륭18.jpg',
+        "대륭17차": './kakao_error_img/대륭17.jpg',
+        "에이스하이엔드10차": './kakao_error_img/에이스하이엔드10.jpg'
+    }
+    
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+    options.add_argument('--disable-dev-shm-usage')
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
+    saved_files = []
+    today_file_str = get_today_str()
+    try:
+        for key, url in kakao_urls.items():
+            filename = IMAGES_DIR / f"{key}_{today_file_str}_dinner.jpg"
+            if filename.exists():
+                os.remove(filename)
+
+            print(f"크롤링 채널: {key} ({url})")
+            driver.get(url)
+            time.sleep(5)
+            html = driver.page_source
+            soup = BeautifulSoup(html, 'html.parser')
+            cards = soup.select('div.wrap_webview div.area_card')
+            found_today = False
+
+            # 카드 선택
+            if key == "에이스하이엔드10차":
+                today_str = get_today_str_with_weekday()
+                target_card = None
+                for card in cards:
+                    title_strong = card.select_one('strong.tit_card')
+                    if not title_strong:
+                        continue
+                    title_text = title_strong.text.strip()
+                    if today_str in title_text:
+                        target_card = card
+                        break
+                if target_card:
+                    next_slide = target_card.select('div.swiper-slide-next')[0]
+                    if next_slide:
+                        thumb_divs = next_slide.select('div.wrap_fit_thumb')
+                        img_url = extract_img_url_from_thumb(thumb_divs[0])
+                        if img_url and save_image(img_url, filename):
+                            saved_files.append(str(filename))
+                            found_today = True
+            else:
+                today_cards = parse_today_cards(cards, key)
+                target_card = today_cards[0] if today_cards else None
+                if target_card:
+                    thumb_div = target_card.select_one('div.wrap_fit_thumb')
+                    print(thumb_div)
+                    img_url = extract_img_url_from_thumb(thumb_div)
+                    if img_url and save_image(img_url, filename):
+                        saved_files.append(str(filename))
+                        found_today = True
+
+            # 에러 이미지 처리
+            if not found_today:
+                error_img = error_img_map.get(key)
+                if error_img and os.path.exists(error_img):
+                    if error_img not in saved_files:
+                        saved_files.append(error_img)
+                        print(f"에러 이미지 추가됨: {error_img}")
+                else:
+                    print(f"에러 이미지가 존재하지 않음: {error_img}")
+
+    finally:
+        driver.quit()
+    return saved_files
+
+    
+    
 if __name__ == "__main__":
-    result = crawl_kakao_images()
+    result = crawl_kakao_images_dinner()
     print("Saved files:", result)

@@ -139,3 +139,597 @@ NoneType: None
 2025-05-26 15:02:30,028 INFO:Get LATEST chromedriver version for google-chrome
 2025-05-26 15:02:30,075 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
 2025-05-26 15:02:58,727 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['kakao_images/대륭18차_2025_05_26.jpg', 'kakao_images/대륭17차_2025_05_26.jpg', 'kakao_images/에이스하이엔드10차_2025_05_26.jpg']
+2025-05-27 19:25:16,382 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 19:25:16,401 INFO:logging in using static token
+2025-05-27 19:25:17,715 INFO:Shard ID None has connected to Gateway (Session ID: 58dac7d47bd8836a642a247f76586798).
+2025-05-27 19:25:19,723 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 19:25:19,724 INFO:Bot is ready to receive commands.
+2025-05-27 19:25:19,736 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 19:25:19,736 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 19:25:19,736 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 19:25:19,736 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 19:25:19,738 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 19:25:19,738 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 19:25:19,738 INFO:Scheduler started
+2025-05-27 19:25:19,739 INFO:====== WebDriver manager ======
+2025-05-27 19:25:20,359 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-27 19:25:20,409 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-27 19:25:20,824 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-27 19:25:46,979 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['./kakao_error_img/대륭18.jpg', './kakao_error_img/대륭17.jpg', 'kakao_images/에이스하이엔드10차_2025_05_27.jpg']
+2025-05-27 19:26:03,453 ERROR:An error occurred during command execution: Command raised an exception: NameError: name 'today_menu_dinner_imgages' is not defined
+NoneType: None
+2025-05-27 19:27:15,662 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 19:27:15,680 INFO:logging in using static token
+2025-05-27 19:27:16,791 INFO:Shard ID None has connected to Gateway (Session ID: 5ee544f265fa92851144795fb99e6dff).
+2025-05-27 19:27:18,798 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 19:27:18,799 INFO:Bot is ready to receive commands.
+2025-05-27 19:27:18,808 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 19:27:18,808 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 19:27:18,809 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 19:27:18,809 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 19:27:18,810 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 19:27:18,810 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 19:27:18,811 INFO:Scheduler started
+2025-05-27 19:27:18,811 INFO:====== WebDriver manager ======
+2025-05-27 19:27:19,426 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-27 19:27:19,466 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-27 19:27:19,500 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-27 19:27:46,166 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['./kakao_error_img/대륭18.jpg', './kakao_error_img/대륭17.jpg', 'kakao_images/에이스하이엔드10차_2025_05_27.jpg']
+2025-05-27 19:27:46,166 INFO:====== WebDriver manager ======
+2025-05-27 19:27:46,799 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-27 19:27:46,828 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-27 19:27:46,859 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-27 19:28:08,293 INFO:[스케줄] 오늘의 메뉴 이미지 미리 로드 완료: ['./kakao_error_img/대륭17.jpg', 'kakao_images/에이스하이엔드10차_2025_05_27_dinner.jpg']
+2025-05-27 19:35:00,626 INFO:Shard ID None has successfully RESUMED session 5ee544f265fa92851144795fb99e6dff.
+2025-05-27 20:37:44,508 ERROR:Attempting a reconnect in 0.85s
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [nodename nor servname provided, or not known]
+2025-05-27 20:37:45,389 ERROR:Attempting a reconnect in 0.45s
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [nodename nor servname provided, or not known]
+2025-05-27 20:37:45,843 ERROR:Attempting a reconnect in 4.68s
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [nodename nor servname provided, or not known]
+2025-05-27 20:38:19,327 ERROR:Attempting a reconnect in 14.89s
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [nodename nor servname provided, or not known]
+2025-05-27 20:38:34,235 ERROR:Attempting a reconnect in 9.52s
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [nodename nor servname provided, or not known]
+2025-05-27 20:38:43,762 ERROR:Attempting a reconnect in 57.66s
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [nodename nor servname provided, or not known]
+2025-05-27 20:39:41,430 ERROR:Attempting a reconnect in 103.19s
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [nodename nor servname provided, or not known]
+2025-05-27 21:18:36,039 ERROR:Attempting a reconnect in 31.81s
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [nodename nor servname provided, or not known]
+2025-05-27 21:24:54,722 ERROR:Attempting a reconnect in 328.46s
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/socket.py", line 967, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/opt/anaconda3/envs/discord/lib/python3.10/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [nodename nor servname provided, or not known]
+2025-05-27 22:39:05,802 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 22:39:05,824 INFO:logging in using static token
+2025-05-27 22:39:07,422 INFO:Shard ID None has connected to Gateway (Session ID: 892afe6fe0a5c8dec0d7e96151d092db).
+2025-05-27 22:39:09,431 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 22:39:09,432 INFO:Bot is ready to receive commands.
+2025-05-27 22:39:09,443 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:39:09,443 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 22:39:09,443 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:39:09,444 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 22:39:09,445 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 22:39:09,446 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 22:39:09,446 INFO:Scheduler started
+2025-05-27 22:39:09,447 INFO:====== WebDriver manager ======
+2025-05-27 22:39:10,852 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-27 22:39:10,913 INFO:Get LATEST chromedriver version for google-chrome
+2025-05-27 22:39:10,958 INFO:Driver [/Users/macbook/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-x64/chromedriver] found in cache
+2025-05-27 22:39:31,904 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 22:39:31,922 INFO:logging in using static token
+2025-05-27 22:39:33,345 INFO:Shard ID None has connected to Gateway (Session ID: 6538fd65d624b0abc04cbdadfe5c43bd).
+2025-05-27 22:39:35,363 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 22:39:35,363 INFO:Bot is ready to receive commands.
+2025-05-27 22:39:35,373 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:39:35,373 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 22:39:35,373 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:39:35,374 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 22:39:35,375 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 22:39:35,376 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 22:39:35,376 INFO:Scheduler started
+2025-05-27 22:40:12,412 ERROR:An error occurred during command execution: Command raised an exception: APIRemovedInV1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+NoneType: None
+2025-05-27 22:40:41,459 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 22:40:41,478 INFO:logging in using static token
+2025-05-27 22:40:43,085 INFO:Shard ID None has connected to Gateway (Session ID: 15b8ad32a6eaa99c7718cc13ef29df52).
+2025-05-27 22:40:45,092 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 22:40:45,093 INFO:Bot is ready to receive commands.
+2025-05-27 22:40:45,096 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:40:45,096 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 22:40:45,096 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:40:45,096 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 22:40:45,097 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 22:40:45,097 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 22:40:45,097 INFO:Scheduler started
+2025-05-27 22:40:50,962 ERROR:An error occurred during command execution: Command raised an exception: AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+NoneType: None
+2025-05-27 22:41:39,868 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 22:41:39,887 INFO:logging in using static token
+2025-05-27 22:41:41,319 INFO:Shard ID None has connected to Gateway (Session ID: 8be9aa9af59d8b07a0e6e987da0099f3).
+2025-05-27 22:41:43,326 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 22:41:43,327 INFO:Bot is ready to receive commands.
+2025-05-27 22:41:43,338 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:41:43,338 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 22:41:43,339 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:41:43,339 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 22:41:43,340 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 22:41:43,341 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 22:41:43,341 INFO:Scheduler started
+2025-05-27 22:46:00,491 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 22:46:00,511 INFO:logging in using static token
+2025-05-27 22:46:02,063 INFO:Shard ID None has connected to Gateway (Session ID: e1527d62be6f4afaa93174883ea935eb).
+2025-05-27 22:46:04,075 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 22:46:04,076 INFO:Bot is ready to receive commands.
+2025-05-27 22:46:04,082 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:46:04,082 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 22:46:04,082 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:46:04,082 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 22:46:04,084 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 22:46:04,084 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 22:46:04,084 INFO:Scheduler started
+2025-05-27 22:46:58,469 ERROR:An error occurred during command execution: Command raised an exception: AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+NoneType: None
+2025-05-27 22:48:18,648 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 22:48:18,667 INFO:logging in using static token
+2025-05-27 22:48:20,303 INFO:Shard ID None has connected to Gateway (Session ID: ade40478e232ce05c6bdd66834020fcc).
+2025-05-27 22:48:22,312 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 22:48:22,313 INFO:Bot is ready to receive commands.
+2025-05-27 22:48:22,319 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:48:22,319 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 22:48:22,320 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:48:22,320 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 22:48:22,321 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 22:48:22,321 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 22:48:22,321 INFO:Scheduler started
+2025-05-27 22:49:25,814 ERROR:An error occurred during command execution: Command raised an exception: AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+NoneType: None
+2025-05-27 22:52:56,716 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 22:52:56,735 INFO:logging in using static token
+2025-05-27 22:52:59,626 INFO:Shard ID None has connected to Gateway (Session ID: d630a3429bd9f2e8b4154f8cf8391e17).
+2025-05-27 22:53:01,636 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 22:53:01,637 INFO:Bot is ready to receive commands.
+2025-05-27 22:53:01,647 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:53:01,648 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 22:53:01,648 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:53:01,648 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 22:53:01,650 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 22:53:01,650 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 22:53:01,650 INFO:Scheduler started
+2025-05-27 22:53:10,013 ERROR:An error occurred during command execution: Command raised an exception: OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+NoneType: None
+2025-05-27 22:54:10,510 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 22:54:10,530 INFO:logging in using static token
+2025-05-27 22:54:12,081 INFO:Shard ID None has connected to Gateway (Session ID: 2d74ee2f1f3ce08c8bdea123b36068c2).
+2025-05-27 22:54:14,097 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 22:54:14,098 INFO:Bot is ready to receive commands.
+2025-05-27 22:54:14,109 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:54:14,109 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 22:54:14,109 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:54:14,110 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 22:54:14,112 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 22:54:14,112 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 22:54:14,112 INFO:Scheduler started
+2025-05-27 22:54:18,429 ERROR:An error occurred during command execution: Command raised an exception: OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+NoneType: None
+2025-05-27 22:54:58,765 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 22:54:58,785 INFO:logging in using static token
+2025-05-27 22:55:00,522 INFO:Shard ID None has connected to Gateway (Session ID: 34b6721ba7d5d74ae15a555dbac2fdbe).
+2025-05-27 22:55:02,534 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 22:55:02,535 INFO:Bot is ready to receive commands.
+2025-05-27 22:55:02,544 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:55:02,544 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 22:55:02,545 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:55:02,545 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 22:55:02,547 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 22:55:02,547 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 22:55:02,547 INFO:Scheduler started
+2025-05-27 22:55:08,015 ERROR:An error occurred during command execution: Command raised an exception: OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+NoneType: None
+2025-05-27 22:56:51,527 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 22:56:51,546 INFO:logging in using static token
+2025-05-27 22:56:53,218 INFO:Shard ID None has connected to Gateway (Session ID: 08746660f86f283d0ac0ae27cf0d3c11).
+2025-05-27 22:56:55,225 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 22:56:55,226 INFO:Bot is ready to receive commands.
+2025-05-27 22:56:55,235 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:56:55,235 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 22:56:55,236 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:56:55,236 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 22:56:55,237 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 22:56:55,237 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 22:56:55,237 INFO:Scheduler started
+2025-05-27 22:57:00,484 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 22:57:00,855 INFO:!AI음식추천 명령 실행 by demijin (ID: 370455630210924544), category: None
+2025-05-27 22:57:17,678 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 22:57:18,101 INFO:!AI음식추천 명령 실행 by demijin (ID: 370455630210924544), category: 돈가스
+2025-05-27 22:59:37,977 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 22:59:37,996 INFO:logging in using static token
+2025-05-27 22:59:39,543 INFO:Shard ID None has connected to Gateway (Session ID: 93cc7135c45cdbfd87685cf51ec37f66).
+2025-05-27 22:59:41,583 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 22:59:41,584 INFO:Bot is ready to receive commands.
+2025-05-27 22:59:41,595 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:59:41,595 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 22:59:41,596 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 22:59:41,596 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 22:59:41,598 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 22:59:41,598 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 22:59:41,598 INFO:Scheduler started
+2025-05-27 23:00:08,097 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 23:00:09,113 INFO:!AI음식추천 명령 실행 by demijin (ID: 370455630210924544), category: None
+2025-05-27 23:00:31,113 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 23:00:32,339 INFO:!AI음식추천 명령 실행 by demijin (ID: 370455630210924544), category: 짜장면
+2025-05-27 23:10:11,862 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 23:10:11,881 INFO:logging in using static token
+2025-05-27 23:10:13,607 INFO:Shard ID None has connected to Gateway (Session ID: cd6a7d186c5c4f857ae8d3721d9ca2b4).
+2025-05-27 23:10:15,616 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 23:10:15,616 INFO:Bot is ready to receive commands.
+2025-05-27 23:10:15,623 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 23:10:15,623 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 23:10:15,623 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 23:10:15,623 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 23:10:15,624 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 23:10:15,624 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 23:10:15,624 INFO:Scheduler started
+2025-05-27 23:16:27,608 WARNING:PyNaCl is not installed, voice will NOT be supported
+2025-05-27 23:16:27,628 INFO:logging in using static token
+2025-05-27 23:16:29,553 INFO:Shard ID None has connected to Gateway (Session ID: abd107343670ddcb81289128d51b9615).
+2025-05-27 23:16:31,557 INFO:Logged in as 점심봇#2875 (ID: 1375338299920748594)
+2025-05-27 23:16:31,557 INFO:Bot is ready to receive commands.
+2025-05-27 23:16:31,563 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 23:16:31,564 INFO:Scheduled job for scheduled_lunch_crawl at 09:55 mon-fri.
+2025-05-27 23:16:31,564 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-27 23:16:31,564 INFO:Scheduled job for scheduled_dinner_crawl at 17:30 mon-fri.
+2025-05-27 23:16:31,566 INFO:Added job "scheduled_lunch_crawl" to job store "default"
+2025-05-27 23:16:31,566 INFO:Added job "scheduled_dinner_crawl" to job store "default"
+2025-05-27 23:16:31,566 INFO:Scheduler started
+2025-05-27 23:16:50,641 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 23:16:51,112 INFO:!AI음식추천 명령 실행 by demijin (ID: 370455630210924544), category: None
