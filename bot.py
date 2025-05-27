@@ -157,7 +157,12 @@ async def on_reaction_add(reaction, user):
     if user.bot:
         return
     msg = reaction.message
-    if msg.embeds and msg.embeds[0].footer.text.startswith("추천 수:"):
+    if (
+        msg.embeds
+        and msg.embeds[0].footer
+        and msg.embeds[0].footer.text
+        and msg.embeds[0].footer.text.startswith("추천 수:")
+    ):
         store_name = msg.embeds[0].title
         if str(reaction.emoji) == '👍':
             async with lock:
@@ -182,7 +187,12 @@ async def on_reaction_remove(reaction, user):
     if user.bot:
         return
     msg = reaction.message
-    if msg.embeds and msg.embeds[0].footer.text.startswith("추천 수:"):
+    if (
+        msg.embeds
+        and msg.embeds[0].footer
+        and msg.embeds[0].footer.text
+        and msg.embeds[0].footer.text.startswith("추천 수:")
+    ):
         store_name = msg.embeds[0].title
         if str(reaction.emoji) == '👍':
             async with lock:
